@@ -29,11 +29,11 @@ students, tuitions = enrollment_stats(universities)
 
 print("*" * 30)
 print(f"Total students: {sum(students):,}")
-print(f"Total tuition: $ {sum(tuitions):,}\n")
+print(f"Total tuition:  {sum(tuitions):,}\n")
 
 print(f"Student mean: {mean(students):,.2f}")
 print(f"Student median: {median(students):,}\n")
 
-print(f"Tuition mean: $ {mean(tuitions):,.2f}")
-print(f"Tuition median: $ {median(tuitions):,}")
+print(f"Tuition mean:  {mean(tuitions):,.2f}")
+print(f"Tuition median:  {median(tuitions):,}")
 print("*" * 30)
