@@ -1,53 +1,38 @@
 class Animal:
-    def __init__(self, name, species, age):
+    def __init__(self, name):
         self.name = name
-        self.species = species
-        self.age = age
-
-    def make_sound(self):
-        print(f"{self.name} makes a sound.")
 
     def eat(self):
-        print(f"{self.name} is eating.")
+        print(self.name + " is eating.")
 
     def sleep(self):
-        print(f"{self.name} is sleeping.")
-
-
-class Dog(Animal):
-    def __init__(self, name, age):
-        super().__init__(name, "Dog", age)
-
-    def fetch(self):
-        print(f"{self.name} is fetching the ball!")
+        print(self.name + " is sleeping.")
 
 
 class Cow(Animal):
-    def __init__(self, name, age):
-        super().__init__(name, "Cow", age)
-
-    def milk(self):
-        print(f"{self.name} is being milked.")
+    def moo(self):
+        print(self.name + " says Moo!")
 
 
 class Chicken(Animal):
-    def __init__(self, name, age):
-        super().__init__(name, "Chicken", age)
-
-    def lay_eggs(self):
-        print(f"{self.name} is laying eggs.")
+    def cluck(self):
+        print(self.name + " says Cluck!")
 
 
-# Example usage:
-dog = Dog("Rex", 5)
-cow = Cow("Bessie", 4)
-chicken = Chicken("Clara", 2)
+class Pig(Animal):
+    def oink(self):
+        print(self.name + " says Oink!")
 
-dog.make_sound()
-dog.fetch()
 
-cow.make_sound()
-cow.milk()
+# Testing
+cow = Cow("Betsy")
+cow.eat()
+cow.moo()
 
-chicken.make_sound()
-chicken.lay_eggs()
+chicken = Chicken("Henrietta")
+chicken.sleep()
+chicken.cluck()
+
+pig = Pig("Porky")
+pig.eat()
+pig.oink()
