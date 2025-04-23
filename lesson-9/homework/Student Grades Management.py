@@ -29,3 +29,6 @@ with open('average_grades.csv', 'w', newline='') as file:
     writer.writerow(['Subject', 'Average Grade'])
     for subject, avg in averages.items():
         writer.writerow([subject, avg])
+
+
+

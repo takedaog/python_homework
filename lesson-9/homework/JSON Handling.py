@@ -43,3 +43,6 @@ with open('tasks.csv', 'w', newline='') as f:
     writer.writerow(['ID', 'Task', 'Completed', 'Priority'])
     for t in tasks:
         writer.writerow([t['id'], t['task'], t['completed'], t['priority']])
+
+
+
